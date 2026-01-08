@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup Manager</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🖥️ Setup Manager</h1>
+
+        <div class="card">
+            <h3>Meu Orçamento</h3>
+            <div class="saldo-display">
+                R$ <span id="valor-saldo">0.00</span>
+            </div>
+            <input type="number" id="input-deposito" placeholder="Valor para adicionar">
+            <button onclick="adicionarSaldo()">Adicionar Saldo</button>
+        </div>
+
+        <div class="card">
+            <h3>Planejar Upgrade</h3>
+            <select id="select-peca">
+                <option value="0">Selecione uma peça...</option>
+                <option value="450">Mouse Gamer (R$ 450,00)</option>
+                <option value="1200">Monitor AOC 180hz (R$ 1.200,00)</option>
+                <option value="350">SSD Kingston 512GB (R$ 350,00)</option>
+                <option value="2500">Placa de Vídeo RX (R$ 2.500,00)</option>
+            </select>
+            <button class="btn-comprar" onclick="verificarCompra()">Simular Compra</button>
+        </div>
+
+        <div id="feedback" class="mensagem"></div>
+    </div>
+
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px; /* Tamanho ideal para celular */
+    text-align: center;
+}
+
+h1 { color: #00d4ff; }
+
+.card {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.saldo-display {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4caf50;
+    margin: 15px 0;
+}
+
+input, select {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #333;
+    color: white;
+}
+
+button {
+    width: 95%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #00d4ff;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover { background-color: #008cb3; }
+
+.btn-comprar { background-color: #ff9800; }
+
+.mensagem {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    min-height: 20px;
+    background: #252525;
+}
